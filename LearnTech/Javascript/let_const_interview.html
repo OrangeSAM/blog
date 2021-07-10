@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS | let &amp; const | 刘一笔的博客</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/logo.jpg">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/logo.jpg">
+    <link rel="mask-icon" href="/logo.jpg" color="#3eaf7c">
+    <meta name="description" content="博客，日常记录，JavaScript，CSS，LeetCode，Node，HTTP">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/logo.jpg">
+    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="preload" href="/assets/css/0.styles.166fb109.css" as="style"><link rel="preload" href="/assets/js/app.43ad61d0.js" as="script"><link rel="preload" href="/assets/js/2.1fc9df47.js" as="script"><link rel="preload" href="/assets/js/77.fdb79ef7.js" as="script"><link rel="preload" href="/assets/js/5.cfe5c241.js" as="script"><link rel="prefetch" href="/assets/js/10.d502310f.js"><link rel="prefetch" href="/assets/js/100.fb239a89.js"><link rel="prefetch" href="/assets/js/101.2151c006.js"><link rel="prefetch" href="/assets/js/102.1d702054.js"><link rel="prefetch" href="/assets/js/103.40f30f75.js"><link rel="prefetch" href="/assets/js/104.0c98162d.js"><link rel="prefetch" href="/assets/js/105.6e0c095d.js"><link rel="prefetch" href="/assets/js/106.a481ff60.js"><link rel="prefetch" href="/assets/js/107.0783e2c8.js"><link rel="prefetch" href="/assets/js/108.ce66c64a.js"><link rel="prefetch" href="/assets/js/109.16240db3.js"><link rel="prefetch" href="/assets/js/11.f34148d5.js"><link rel="prefetch" href="/assets/js/110.e46cbc35.js"><link rel="prefetch" href="/assets/js/111.dfac0e9b.js"><link rel="prefetch" href="/assets/js/112.3973a710.js"><link rel="prefetch" href="/assets/js/113.10cda74f.js"><link rel="prefetch" href="/assets/js/114.9e0290ae.js"><link rel="prefetch" href="/assets/js/115.3a271f51.js"><link rel="prefetch" href="/assets/js/116.571094ba.js"><link rel="prefetch" href="/assets/js/117.01a63c82.js"><link rel="prefetch" href="/assets/js/118.4898e441.js"><link rel="prefetch" href="/assets/js/119.1740072a.js"><link rel="prefetch" href="/assets/js/12.92a55c81.js"><link rel="prefetch" href="/assets/js/120.111c8e5c.js"><link rel="prefetch" href="/assets/js/121.22040bfe.js"><link rel="prefetch" href="/assets/js/122.fcaf893c.js"><link rel="prefetch" href="/assets/js/123.c50ee978.js"><link rel="prefetch" href="/assets/js/124.1a4447f8.js"><link rel="prefetch" href="/assets/js/125.21354032.js"><link rel="prefetch" href="/assets/js/126.94890a16.js"><link rel="prefetch" href="/assets/js/127.7e9de262.js"><link rel="prefetch" href="/assets/js/128.eedd7b15.js"><link rel="prefetch" href="/assets/js/129.03f3a9f7.js"><link rel="prefetch" href="/assets/js/13.02504181.js"><link rel="prefetch" href="/assets/js/130.1fabec0c.js"><link rel="prefetch" href="/assets/js/131.88ee5eb5.js"><link rel="prefetch" href="/assets/js/132.914fe876.js"><link rel="prefetch" href="/assets/js/133.eb8a5c8d.js"><link rel="prefetch" href="/assets/js/134.64ed3d32.js"><link rel="prefetch" href="/assets/js/135.50145a1f.js"><link rel="prefetch" href="/assets/js/136.887fcca3.js"><link rel="prefetch" href="/assets/js/137.3862f1a9.js"><link rel="prefetch" href="/assets/js/138.93b6c4c8.js"><link rel="prefetch" href="/assets/js/139.80a50999.js"><link rel="prefetch" href="/assets/js/14.77a357cf.js"><link rel="prefetch" href="/assets/js/140.d1074f76.js"><link rel="prefetch" href="/assets/js/141.85b18cc2.js"><link rel="prefetch" href="/assets/js/142.cb6b72d6.js"><link rel="prefetch" href="/assets/js/143.a56b1457.js"><link rel="prefetch" href="/assets/js/144.b927ab29.js"><link rel="prefetch" href="/assets/js/145.6c52efcb.js"><link rel="prefetch" href="/assets/js/146.2b0bc759.js"><link rel="prefetch" href="/assets/js/147.04c80ed1.js"><link rel="prefetch" href="/assets/js/148.22c257f9.js"><link rel="prefetch" href="/assets/js/149.4102fe6d.js"><link rel="prefetch" href="/assets/js/15.b20eface.js"><link rel="prefetch" href="/assets/js/150.fbd84ad0.js"><link rel="prefetch" href="/assets/js/151.82d01746.js"><link rel="prefetch" href="/assets/js/152.1f405d78.js"><link rel="prefetch" href="/assets/js/153.991ccfdb.js"><link rel="prefetch" href="/assets/js/154.f5780494.js"><link rel="prefetch" href="/assets/js/155.84e4b57f.js"><link rel="prefetch" href="/assets/js/156.73f3536d.js"><link rel="prefetch" href="/assets/js/157.1343febe.js"><link rel="prefetch" href="/assets/js/158.3fa9ae95.js"><link rel="prefetch" href="/assets/js/159.d770b1d3.js"><link rel="prefetch" href="/assets/js/16.0c0e964c.js"><link rel="prefetch" href="/assets/js/160.2b5aad24.js"><link rel="prefetch" href="/assets/js/161.c7c96985.js"><link rel="prefetch" href="/assets/js/162.520d79d8.js"><link rel="prefetch" href="/assets/js/163.a1aa08e2.js"><link rel="prefetch" href="/assets/js/164.239b5abf.js"><link rel="prefetch" href="/assets/js/165.a6bbba0f.js"><link rel="prefetch" href="/assets/js/166.91593de5.js"><link rel="prefetch" href="/assets/js/167.172d089f.js"><link rel="prefetch" href="/assets/js/168.3abd1171.js"><link rel="prefetch" href="/assets/js/169.35144785.js"><link rel="prefetch" href="/assets/js/17.2bc62af2.js"><link rel="prefetch" href="/assets/js/170.fa760897.js"><link rel="prefetch" href="/assets/js/171.5c34c75e.js"><link rel="prefetch" href="/assets/js/172.60d07997.js"><link rel="prefetch" href="/assets/js/173.c0528a57.js"><link rel="prefetch" href="/assets/js/174.b97a027d.js"><link rel="prefetch" href="/assets/js/175.824a3e00.js"><link rel="prefetch" href="/assets/js/176.1f14606e.js"><link rel="prefetch" href="/assets/js/177.bd7daf05.js"><link rel="prefetch" href="/assets/js/178.8030f320.js"><link rel="prefetch" href="/assets/js/179.8965f445.js"><link rel="prefetch" href="/assets/js/18.79f1fd30.js"><link rel="prefetch" href="/assets/js/180.d1368663.js"><link rel="prefetch" href="/assets/js/181.13f7eeb2.js"><link rel="prefetch" href="/assets/js/182.4c73dca1.js"><link rel="prefetch" href="/assets/js/19.600bc21c.js"><link rel="prefetch" href="/assets/js/20.87510a7c.js"><link rel="prefetch" href="/assets/js/21.88d898de.js"><link rel="prefetch" href="/assets/js/22.63cca13e.js"><link rel="prefetch" href="/assets/js/23.00116180.js"><link rel="prefetch" href="/assets/js/24.d8730eb0.js"><link rel="prefetch" href="/assets/js/25.1259c93e.js"><link rel="prefetch" href="/assets/js/26.2de0cb16.js"><link rel="prefetch" href="/assets/js/27.b6421d5f.js"><link rel="prefetch" href="/assets/js/28.c119fb76.js"><link rel="prefetch" href="/assets/js/29.5b417507.js"><link rel="prefetch" href="/assets/js/3.a1971861.js"><link rel="prefetch" href="/assets/js/30.a5e0bd28.js"><link rel="prefetch" href="/assets/js/31.adc41183.js"><link rel="prefetch" href="/assets/js/32.3b7ccc1a.js"><link rel="prefetch" href="/assets/js/33.0750e776.js"><link rel="prefetch" href="/assets/js/34.46d6cdbb.js"><link rel="prefetch" href="/assets/js/35.a3fea112.js"><link rel="prefetch" href="/assets/js/36.1cab5fef.js"><link rel="prefetch" href="/assets/js/37.e70352f8.js"><link rel="prefetch" href="/assets/js/38.b3274de7.js"><link rel="prefetch" href="/assets/js/39.bb9c01bb.js"><link rel="prefetch" href="/assets/js/4.0581c077.js"><link rel="prefetch" href="/assets/js/40.7efa7600.js"><link rel="prefetch" href="/assets/js/41.9483e719.js"><link rel="prefetch" href="/assets/js/42.255b55f0.js"><link rel="prefetch" href="/assets/js/43.dd3d4733.js"><link rel="prefetch" href="/assets/js/44.5beb8a7f.js"><link rel="prefetch" href="/assets/js/45.851d8b41.js"><link rel="prefetch" href="/assets/js/46.f76b0306.js"><link rel="prefetch" href="/assets/js/47.d8ea8253.js"><link rel="prefetch" href="/assets/js/48.6b6b897f.js"><link rel="prefetch" href="/assets/js/49.763b7c06.js"><link rel="prefetch" href="/assets/js/50.7389aad8.js"><link rel="prefetch" href="/assets/js/51.beeb7464.js"><link rel="prefetch" href="/assets/js/52.f5e1ffe5.js"><link rel="prefetch" href="/assets/js/53.d82eeee0.js"><link rel="prefetch" href="/assets/js/54.6a43c030.js"><link rel="prefetch" href="/assets/js/55.69a78e4d.js"><link rel="prefetch" href="/assets/js/56.7a4ac5c4.js"><link rel="prefetch" href="/assets/js/57.86b5227f.js"><link rel="prefetch" href="/assets/js/58.4a397615.js"><link rel="prefetch" href="/assets/js/59.d2d11f70.js"><link rel="prefetch" href="/assets/js/6.0f62f2df.js"><link rel="prefetch" href="/assets/js/60.64f37535.js"><link rel="prefetch" href="/assets/js/61.0e38ddba.js"><link rel="prefetch" href="/assets/js/62.86493e41.js"><link rel="prefetch" href="/assets/js/63.ef9f049a.js"><link rel="prefetch" href="/assets/js/64.afb5b261.js"><link rel="prefetch" href="/assets/js/65.aab6b530.js"><link rel="prefetch" href="/assets/js/66.d7247615.js"><link rel="prefetch" href="/assets/js/67.34dfab0c.js"><link rel="prefetch" href="/assets/js/68.3dc0aeb1.js"><link rel="prefetch" href="/assets/js/69.efd2ca55.js"><link rel="prefetch" href="/assets/js/7.132247dd.js"><link rel="prefetch" href="/assets/js/70.95ca3d3c.js"><link rel="prefetch" href="/assets/js/71.2c7a4967.js"><link rel="prefetch" href="/assets/js/72.1a251716.js"><link rel="prefetch" href="/assets/js/73.61bf96fa.js"><link rel="prefetch" href="/assets/js/74.5ab8265a.js"><link rel="prefetch" href="/assets/js/75.39e30ca0.js"><link rel="prefetch" href="/assets/js/76.5e9f4bd6.js"><link rel="prefetch" href="/assets/js/78.dceb341b.js"><link rel="prefetch" href="/assets/js/79.160031a0.js"><link rel="prefetch" href="/assets/js/8.99d6c358.js"><link rel="prefetch" href="/assets/js/80.4f448000.js"><link rel="prefetch" href="/assets/js/81.b5ff1521.js"><link rel="prefetch" href="/assets/js/82.1ae54b0d.js"><link rel="prefetch" href="/assets/js/83.b990d83c.js"><link rel="prefetch" href="/assets/js/84.1dc79672.js"><link rel="prefetch" href="/assets/js/85.013efb36.js"><link rel="prefetch" href="/assets/js/86.efeaabae.js"><link rel="prefetch" href="/assets/js/87.5b68eda4.js"><link rel="prefetch" href="/assets/js/88.e2ff0d6d.js"><link rel="prefetch" href="/assets/js/89.9927c740.js"><link rel="prefetch" href="/assets/js/9.bd4c7b85.js"><link rel="prefetch" href="/assets/js/90.26fc1d5e.js"><link rel="prefetch" href="/assets/js/91.ea0ad76d.js"><link rel="prefetch" href="/assets/js/92.e8d90ded.js"><link rel="prefetch" href="/assets/js/93.9defcb19.js"><link rel="prefetch" href="/assets/js/94.cacaa0f8.js"><link rel="prefetch" href="/assets/js/95.45034e7f.js"><link rel="prefetch" href="/assets/js/96.d6c33d64.js"><link rel="prefetch" href="/assets/js/97.c1a23818.js"><link rel="prefetch" href="/assets/js/98.48fa9b8f.js"><link rel="prefetch" href="/assets/js/99.539b176e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.166fb109.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">刘一笔的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/LearnTech/" class="nav-link router-link-active">
+  技术学习
+</a></div><div class="nav-item"><a href="/Projects/" class="nav-link">
+  项目记录
+</a></div><div class="nav-item"><a href="/LeetCode/" class="nav-link">
+  LeetCode
+</a></div><div class="nav-item"><a href="/Reading/" class="nav-link">
+  阅读记录
+</a></div><div class="nav-item"><a href="/IdeaPills/" class="nav-link">
+  闪念
+</a></div><div class="nav-item"><a href="/CodingTool/" class="nav-link">
+  编程工具
+</a></div><div class="nav-item"><a href="https://github.com/OrangeSAM" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="友链" class="dropdown-title"><span class="title">友链</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.lxchuan12.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  若川博客
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://wind-nest.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  森淼
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.mybeifeng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  北风
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/LearnTech/" class="nav-link router-link-active">
+  技术学习
+</a></div><div class="nav-item"><a href="/Projects/" class="nav-link">
+  项目记录
+</a></div><div class="nav-item"><a href="/LeetCode/" class="nav-link">
+  LeetCode
+</a></div><div class="nav-item"><a href="/Reading/" class="nav-link">
+  阅读记录
+</a></div><div class="nav-item"><a href="/IdeaPills/" class="nav-link">
+  闪念
+</a></div><div class="nav-item"><a href="/CodingTool/" class="nav-link">
+  编程工具
+</a></div><div class="nav-item"><a href="https://github.com/OrangeSAM" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="友链" class="dropdown-title"><span class="title">友链</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.lxchuan12.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  若川博客
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://wind-nest.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  森淼
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.mybeifeng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  北风
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>JavaScript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/LearnTech/Javascript/apply_call_bind.html" class="sidebar-link">JS | call apply bind</a></li><li><a href="/LearnTech/Javascript/event_bind.html" class="sidebar-link">JS | 事件绑定</a></li><li><a href="/LearnTech/Javascript/event_loop_translate.html" class="sidebar-link">JS | EventLoop</a></li><li><a href="/LearnTech/Javascript/babel.html" class="sidebar-link">JS | babel</a></li><li><a href="/LearnTech/Javascript/filter_in_array.html" class="sidebar-link">数组中的filter方法</a></li><li><a href="/LearnTech/Javascript/forin_forof.html" class="sidebar-link">JS | for in 和 for of的异同</a></li><li><a href="/LearnTech/Javascript/func_declare_expression.html" class="sidebar-link">函数声明和表达式</a></li><li><a href="/LearnTech/Javascript/hand_writing.html" class="sidebar-link">JS | 各种手写</a></li><li><a href="/LearnTech/Javascript/Iterator_generator.html" class="sidebar-link">JS | 迭代器和生成器</a></li><li><a href="/LearnTech/Javascript/js_modules.html" class="sidebar-link">JavaScript 和 Node.js 中的模块化</a></li><li><a href="/LearnTech/Javascript/js_arrow_func.html" class="sidebar-link">JS | 箭头函数</a></li><li><a href="/LearnTech/Javascript/js_async.html" class="sidebar-link">JS | 异步</a></li><li><a href="/LearnTech/Javascript/js_dataType.html" class="sidebar-link">JS | 数据类型</a></li><li><a href="/LearnTech/Javascript/js_datatype_convert.html" class="sidebar-link">数据类型转换</a></li><li><a href="/LearnTech/Javascript/js_destructuring_assign.html" class="sidebar-link">JS | 解构赋值</a></li><li><a href="/LearnTech/Javascript/js_excute_context.html" class="sidebar-link">JS | 执行上下文</a></li><li><a href="/LearnTech/Javascript/js_inherit.html" class="sidebar-link">JS | 继承</a></li><li><a href="/LearnTech/Javascript/js_new.html" class="sidebar-link">JS | new的执行</a></li><li><a href="/LearnTech/Javascript/js_new_api.html" class="sidebar-link">新API</a></li><li><a href="/LearnTech/Javascript/js_oop.html" class="sidebar-link">JS | 面向对象</a></li><li><a href="/LearnTech/Javascript/js_proto_chain.html" class="sidebar-link">JS | 原型和原型链</a></li><li><a href="/LearnTech/Javascript/let_const_interview.html" aria-current="page" class="active sidebar-link">JS | let &amp; const</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/LearnTech/Javascript/let_const_interview.html#有javascript以来声明变量的四种方式" class="sidebar-link">有JavaScript以来声明变量的四种方式</a></li><li class="sidebar-sub-header"><a href="/LearnTech/Javascript/let_const_interview.html#但a-1会含义不明，在顶层作用域作为全局变量，但是在函数中又是局部变量。" class="sidebar-link">但a=1会含义不明，在顶层作用域作为全局变量，但是在函数中又是局部变量。</a></li><li class="sidebar-sub-header"><a href="/LearnTech/Javascript/let_const_interview.html#一种不建议的写法" class="sidebar-link">一种不建议的写法</a></li><li class="sidebar-sub-header"><a href="/LearnTech/Javascript/let_const_interview.html#let" class="sidebar-link">let</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/LearnTech/Javascript/let_const_interview.html#const" class="sidebar-link">const</a></li><li class="sidebar-sub-header"><a href="/LearnTech/Javascript/let_const_interview.html#面试题" class="sidebar-link" style="padding-left:3rem;">面试题</a></li></ul></li><li class="sidebar-sub-header"><a href="/LearnTech/Javascript/let_const_interview.html#既然会这样，那建议var-放在函数最开始的地方" class="sidebar-link">// 既然会这样，那建议var 放在函数最开始的地方</a></li></ul></li><li><a href="/LearnTech/Javascript/new_string.html" class="sidebar-link">JS | 新版字符串</a></li><li><a href="/LearnTech/Javascript/property_modification.html" class="sidebar-link">属性修饰符</a></li><li><a href="/LearnTech/Javascript/reduce_in_array.html" class="sidebar-link">JS | reduce</a></li><li><a href="/LearnTech/Javascript/this.html" class="sidebar-link">JS | this关键字</a></li><li><a href="/LearnTech/Javascript/what_is_js.html" class="sidebar-link">什么是JavaScript</a></li><li><a href="/LearnTech/Javascript/tool_function.html" class="sidebar-link">js中的工具函数</a></li><li><a href="/LearnTech/Javascript/js_grammar.html" class="sidebar-link">javascript语法</a></li><li><a href="/LearnTech/Javascript/advanced_program_design.html" class="sidebar-link">高级程序设计第四版</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Node</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTTP</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>浏览器</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开课吧</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Flutter</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网课</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="有javascript以来声明变量的四种方式"><a href="#有javascript以来声明变量的四种方式" class="header-anchor">#</a> 有JavaScript以来声明变量的四种方式</h2> <ul><li><p>a=1</p></li> <li><p>var a=1</p></li></ul> <p><em>上面两种是ES3的写法，下面两种是ES6</em></p> <ul><li>let  a=1</li> <li>const a=1;</li></ul> <hr> <h2 id="但a-1会含义不明，在顶层作用域作为全局变量，但是在函数中又是局部变量。"><a href="#但a-1会含义不明，在顶层作用域作为全局变量，但是在函数中又是局部变量。" class="header-anchor">#</a> 但a=1会含义不明，在顶层作用域作为全局变量，但是在函数中又是局部变量。</h2> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">var</span> a<span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> a<span class="token punctuation">;</span>
+    <span class="token keyword">function</span> <span class="token function">fn2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        a<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token comment">//此时的a就是局部变量的a,在函数fn的第一句中声明</span>
+    	<span class="token comment">//去掉第二个var a，那么a就是全局变量</span>
+    	<span class="token comment">//两个var a 都没有的情况下，a=1即会隐式声明为全局变量a</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><hr> <h2 id="一种不建议的写法"><a href="#一种不建议的写法" class="header-anchor">#</a> 一种不建议的写法</h2> <div class="language-JavaScript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        <span class="token keyword">var</span> a<span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">//由于var的变量提升，fn函数执行后并不会报错。	</span>
+<span class="token comment">//因此建议在函数fn开始时声明需要用到的变量。		</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><hr> <h2 id="let"><a href="#let" class="header-anchor">#</a> let</h2> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">var</span> a<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+	window<span class="token punctuation">.</span><span class="token function-variable function">sam</span><span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment">//目的，只暴露sam一个全局变量</span>
+<span class="token comment">//如果不使用函数包裹对a的声明，那么就会不小心暴露window.a全局变量</span>
+<span class="token comment">//而如果是使用具名函数的话，仍然会暴露window.fn全局变量</span>
+<span class="token comment">//因此在没有let声明的时候，需要麻烦的立即理解执行函数来形成无暴露的局部变量</span>
+
+<span class="token keyword">let</span>
+<span class="token comment">//let存在的意义就是为了解决这个问题，为了方便的声明和使用全局变量</span>
+<span class="token comment">//1.let的作用域只看花括号，只在最近的两个花括号之间</span>
+<span class="token comment">//2.在用let声明变量之前使用变量会报错;这也是临时性死区的概念来源</span>
+<span class="token comment">//3.let不能重复赋值，重复赋值也会报错</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><hr> <h3 id="const"><a href="#const" class="header-anchor">#</a> const</h3> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">//1.const的作用域也是局部，只在最近的两个花括号之间</span>
+<span class="token comment">//2.在用const声明的变量之前使用该变量会报错</span>
+<span class="token comment">//3.const不能重复赋值，重复赋值会报错，且const只能赋值一次</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><hr> <h4 id="面试题"><a href="#面试题" class="header-anchor">#</a> 面试题</h4> <h5 id="开胃小菜"><a href="#开胃小菜" class="header-anchor">#</a> 开胃小菜</h5> <div class="language-JavaScript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">var</span> a<span class="token operator">=</span><span class="token number">1</span> 
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token comment">//1</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//在下方有一行代码隐藏的代码，问在这个情况下log的值是否是确定的？</span>
+<span class="token comment">//隐藏的代码在这里</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">//不能确定，因为a是全局声明的变量，且可以重复赋值为其他值</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h5 id="一个经典的题目"><a href="#一个经典的题目" class="header-anchor">#</a> 一个经典的题目</h5> <div class="language-JavaScript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">var</span> i
+<span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">6</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    	<span class="token comment">//do something to i,</span>
+    	<span class="token comment">//like log..</span>
+    	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	btn<span class="token punctuation">.</span>onclick<span class="token operator">=</span>fn
+<span class="token punctuation">}</span>
+<span class="token comment">//请问现在btn按钮的一个click事件会打印出什么？</span>
+<span class="token comment">//毫无疑问是6，因为i是全局声明的变量，在for循环执行完毕后，i的已经变为6了</span>
+<span class="token comment">//js并不会在for循环执行时替你保管每一个i的值到fn中</span>
+<span class="token comment">//另外，i为6的原因是</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>当然，我们见的更多的应该是长下面的样子</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">var</span> liTags<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> i
+<span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>liTags<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    liTags<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span><span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>		
+<span class="token comment">//每个li标签的点击事件都是输出当前循环的i</span>
+<span class="token comment">//但其实本质上和上面没差，由于var的存在，这都是刻舟求剑的行为</span>
+<span class="token comment">//因为点击事件必然后于for循环，那再点击li的时候，因为i是全局变量，早已变成length+1</span>
+
+<span class="token comment">//解决的两种方法</span>
+<span class="token comment">//同上使用立即执行函数得到局部变量</span>
+
+<span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>liTags<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">var</span> j<span class="token operator">=</span>argumengs<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+        liTags<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span><span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>j<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//利用执行函数创建局部变量j,这里也还涉及到js的另一个概念-闭包</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><hr> <p>a=1
+var a=1
+//上面两种是ES3，下面两种是ES 6</p> <p>let a=1;
+const a=1;</p> <p>a=1 含义不明，在顶层作用域是作为全局变量，
+但是在函数中又是局部变量
+var a
+function fn(){}
+var a ;
+function fn2(){}
+a=1 ;//此时的a就是局部变量的a
+//去掉第二个var a才是全局变量
+//两个var 都没有的情况下，a=1即会隐式声明全局变量a}}</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> a
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="既然会这样，那建议var-放在函数最开始的地方"><a href="#既然会这样，那建议var-放在函数最开始的地方" class="header-anchor">#</a> // 既然会这样，那建议var 放在函数最开始的地方</h2> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span>
+    window<span class="token punctuation">.</span><span class="token function-variable function">frank</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>    
+<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment">// 目的，只暴露frank一个全局变量</span>
+<span class="token comment">// var a = 1 就会不小心暴露了window.a全局变量</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>为什么立即执行函数不加括号会报错
+let 的存在就是为了解决这个问题 为了方便的使用局部变量
+let作用域只看花括号，只在最近的两个花括号之间
+在let a之前使用a，报错
+let不能重复赋值，重复也报错</p> <p>{
+//这就是临时性死区console.log(a);
+let a=1;
+}</p> <p>let作用域只看花括号，只在最近的两个花括号之间
+在let a之前使用a，报错
+let不能重复赋值，重复也报错
+对于以上，const也是
+const 只能赋值一次而且必须在声明的时候立马赋值</p> <p>既然会这样，那建议var 放在函数最开始的地方</p> <hr> <p>阮一峰</p> <p>Es6新增了let命令，用来声明变量，用法类似于var，但是所声明的变量，只在let命令所在的代码快内有效
+Var 是全局变量</p> <p>var a = [];
+for (var i = 0; i &lt; 10; i++) {
+a[i] = function () {
+console.log(i);
+};
+}
+a<a href="">6</a>;//10</p> <p>来自 <a href="http://es6.ruanyifeng.com/#docs/let" target="_blank" rel="noopener noreferrer">http://es6.ruanyifeng.com/#docs/let<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+变量i是var命令声明的，在全局范围内都有效，所以全局只有一个变量i。每一次循环，变量i的值都会发生改变，而循环内被赋给数组a的函数内部的console.log(i)，里面的i指向的就是全局的i。也就是说，所有数组a的成员里面的i，指向的都是同一个i，导致运行时输出的是最后一轮的i的值，也就是 10</p> <p>来自 <a href="http://es6.ruanyifeng.com/#docs/let" target="_blank" rel="noopener noreferrer">http://es6.ruanyifeng.com/#docs/let<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>如图示，a[6]传的6只是数组中的位置，而数组中的所有成员都是函数，函数跟数组的位置是分离的，函数执行完之后i=10</p> <p>变量提升，意为，函数及变量的声明总是会被解释器提升到方法体的最顶部，
+函数提升的优先级大于变量提升的优先级
+需要注意的是，初始化并不会被提升。
+JavaScrip严格模式中不允许使用未声明的变量
+function f(a){
+console.log(a);//?
+var a = 2;
+console.log(a);//?
+function a(){};
+console.log(a);//?
+}
+f(1);</p> <p>function f(a){
+var a = function(){};
+console.log(a);// function
+var a = 2;
+console.log(a);//2
+console.log(a);//2
+}
+f(1);</p> <p>来自 <a href="https://zhuanlan.zhihu.com/p/23873265" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/23873265<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>暂时性死区
+只要块级作用域内存在let 命令，它所声明的变量就&quot;绑定&quot;这个区域，不再受到外部的影响。
+ES6 明确规定，如果区块中存在let命令和const命令，这个区块对这些命令声明的变量，从
+一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。错误是reference error。
+Let x=x; //会报错，x is not defined
+而undefined是一个数据类型</p> <p>暂时性死区的本质就是，只要一进入当前作用域，所要使用的变量就已经存在了，但是不可获取，只有等到声明变量的那一行代码出现，才可以获取和使用该变量。</p> <p>let不允许在相同作用域内，重复声明同一个变量，因此不能在函数内部重新声明参数。</p> <p>块级作用域
+ES5只有全局作用域和函数作用域，没有块级作用域。</p> <p>Var s='hello;
+for (var i = 0; i &lt; s.length; i++) {
+console.log(s[i]);//可以对字符串类型这样操作
+}</p> <p>来自 <a href="http://es6.ruanyifeng.com/#docs/let" target="_blank" rel="noopener noreferrer">http://es6.ruanyifeng.com/#docs/let<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>ES6的块级作用域
+let实际上为JavaScript新增了块级作用域，
+所以内层作用域就可以定义外层作用域的同名变量。</p> <p>块级作用域与函数声明
+ES6引入了块级作用域，明确允许在块级作用域之中声明函数。
+ES6规定，块级作用域之中，函数声明语句的行为类似于let，在块级作用域之外不可引用。</p> <p>ES6附录b又规定
+允许在块级作用域内声明函数
+函数声明类似于var，即会提升到全局作用域或函数作用域的头部
+同时，函数声明还会提升到所在的块级作用域的头部</p> <p>ES6的块级作用域允许声明函数的规则，只在使用大括号的的情况下成立，如果没有使用大括号，就会报错</p> <p>const命令
+Const 声明一个只读的常量。一旦声明，常量的值就不能改变，这也意味着，const一旦声明
+变量，就必须立即初始化，不能留到以后赋值。</p> <div class="language- extra-class"><pre><code>Const 的作用域与let命令相同：只在声明所在的块级作用域内有效。
+
+const命令声明的常量也是不提升，同样存在暂时性死区，只能在声明的位置后面使用。
+也不可重复声明。
+
+const命令的本质
+const实际上保证的是变量指向的那个内存地址不得改动，而不是变量的值不得改动。
+
+对于简单类型的数据（数值、字符串、布尔值），值就保存在变量指向的那个内存地址，因此等同于常量；
+但对于复合类型的数据（主要是对象和数组），变量指向的内存地址，保存的知识一个指针，const只能保证这个指针是固定的，并不能控制其所指向的数据结构是不是可变的。
+</code></pre></div><p>ES6声明变量的六种方法
+ES5只有两种声明变量的方法，var命令和function命令，ES6除了添加let和const命令
+还有两种两种，import和class命令</p> <p>顶层对象的属性
+顶层对象，在浏览器环境指的是window对象，在node指的是global对象。
+Es5中，顶层对象的属性与全局变量是等价的。
+ES6的新规定，var命令和function命令声明的全局变量，依旧是顶层对象的属性
+let命令、const命令、class命令声明的全局变量，不属于顶层对象的属性
+即从ES6开始，全局对象将逐步与顶层对象的属性脱钩</p> <div class="language- extra-class"><pre><code>global对象//没看怎么明白
+	-浏览器里面，顶层对象是window，但是node和web worker没有window
+	-浏览器和web worker里面，self也指向顶层对象，但是node没有self
+	-node里面，顶层对象是global，但其他环节都不支持
+	
+	同一段代码为了能够在各种环境，都能取到顶层对象，现在一般是使用this
+	变量，但是有其局限性。
+</code></pre></div><p>var 只会提前声明  function即声明又定义
+let 重复声明会报错</p> <p>let 没有变量提升
+不可一次重复声明
+不会给window增加属性</p> <p>const 一旦声明必须赋值
+定义的是一个常量，不可以重新赋值</p> <p>在块级作用域中  var和function声明的变量依然是全局的
+在块级作用域下 let 和const 声明的变量是私有的</p> <p>函数的变量提升是提升整体吗
+是的
+变量的声明被提前到作用域顶部，赋值保留在原地
+函数声明会整个被提前
+但是只有函数声明式会被提前</p> <p>{} 一个{}就是一个块级作用域
+在块级作用域下 var 和function声明的变量依然是全局的
+在块级作用域下 let 和const 声明的变量是私有的
+{}如果想表示一个对象不可以放在行首</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">一笔写于:</span> <span class="time">3/3/2021, 9:51:53 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/LearnTech/Javascript/js_proto_chain.html" class="prev">
+        JS | 原型和原型链
+      </a></span> <span class="next"><a href="/LearnTech/Javascript/new_string.html">
+        JS | 新版字符串
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><div class="wrap" data-v-6046a539>
+  a hint
+</div></div></div>
+    <script src="/assets/js/app.43ad61d0.js" defer></script><script src="/assets/js/2.1fc9df47.js" defer></script><script src="/assets/js/77.fdb79ef7.js" defer></script><script src="/assets/js/5.cfe5c241.js" defer></script>
+  </body>
+</html>
